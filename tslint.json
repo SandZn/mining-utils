@@ -1,0 +1,29 @@
+{
+  "extends": "tslint:recommended",
+  "rules": {
+    "no-console": false,
+    "no-string-literal": false,
+    "one-line": false,
+    "object-literal-sort-keys": false,
+    "only-arrow-functions": false,
+    "forin": false,
+    "radix": false,
+    "semicolon": false,
+    "no-shadowed-variable": false,
+    "quotemark": false,
+    "one-variable-per-declaration": false,
+    "trailing-comma": false,
+    "member-ordering": false,
+    "arrow-parens": false,
+    "variable-name": {
+      "options": [
+        "allow-leading-underscore"
+      ]
+    },
+    "array-type": [
+      true,
+      "array"
+    ],
+    "max-classes-per-file": false
+  }
+}
