@@ -15,6 +15,10 @@
   "engines": {
     "node": "*"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Oracy/mining-utils.git"
+  },
   "license": "MIT",
   "devDependencies": {
     "@types/node": "~12.11.5"
