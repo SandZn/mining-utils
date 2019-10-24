@@ -1,6 +1,6 @@
 {
   "name": "mining-utils",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "author": "Oracy Rezende Martos <oramartos_21@hotmail.com> (https://github.com/Oracy)",
   "main": "./mining-utils.ts",
