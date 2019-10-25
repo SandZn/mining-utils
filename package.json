@@ -5,7 +5,12 @@
   "author": "Oracy Rezende Martos <oramartos_21@hotmail.com> (https://github.com/Oracy)",
   "main": "./mining-utils.ts",
   "scripts": {
-    "build": "rm -rf dist/ && tsc && gulp minify",
+    "build": "npm run build:remove-previous && npm run build:transpile && npm run build:minify && npm run build:clean && npm run build:after",
+    "build:remove-previous": "rm -rf dist && rm -f index.js",
+    "build:minify": "gulp minify",
+    "build:transpile": "npx tsc",
+    "build:clean": "mv dist/index.js ./ && mv dist/index.d.ts ./ && rm -rf dist/",
+    "build:after": "ts-node src/util/changeDir.ts",
     "start": "npm run build && node dist/index.js"
   },
   "keywords": [
@@ -21,6 +26,14 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "~12.11.5"
+    "@types/node": "~12.11.5",
+    "typescript": "^3.6.4"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-typescript": "^5.0.1",
+    "gulp-uglify": "^3.0.2",
+    "uglify-es": "^3.3.9"
   }
 }
