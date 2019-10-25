@@ -1,5 +1,5 @@
-const accents = 'ÀÁÂÃÄÅàáâãäåÒÓÔÕÕÖŐòóôõöőÈÉÊËèéêëðÇçÐÌÍÎÏìíîïÙÚÛÜŰùúûüűÑñŠšŸÿýŽž';
-const noAccents = 'AAAAAAaaaaaaOOOOOOOooooooEEEEeeeeeCcDIIIIiiiiUUUUUuuuuuNnSsYyyZz';
+const accents = 'ÀÁÂÃÄÅàáâãäåÒÓÔÕÕÖŐòóôõöőÈÉÊËèéêëðÇĈçĉÐǵĝĜǴĥḧḦĤÌÍÎÏìíîïĵĴḱḰĺĹḿḾńǹŃǸÙÚÛÜŰùúûüűÑñṕṔŕŔśŝŜŚŠšẗǘǜṽṼẃẁŵẅẄẂẀŴẍẌýỳŷỹÿýỸÝỲŶŸžźẑẐŹŽ';
+const noAccents = 'AAAAAAaaaaaaOOOOOOOooooooEEEEeeeeeCCccDggGGhhHHIIIIiiiijJkKlLmMnnNNUUUUUuuuuuNnpPrRssSSSstuuvVwwwwWWWWxXyyyyyyYYYYYzzzZZZ';
 
 const removeAccents = (text: string): string => {
   const map = {};
@@ -9,7 +9,14 @@ const removeAccents = (text: string): string => {
 }
 
 const removeAccentsArray = (textArray: string[]): string[] => {
-  return [];
+  const map = {};
+  accents.split('').forEach((el, idx) => map[el] = noAccents[idx])
+
+  for (const key in textArray) {
+    textArray[key].replace(/[^A-Za-z0-9]/g, (ch) => map[ch] || ch)
+  }
+
+  return ;
 }
 
 export {
