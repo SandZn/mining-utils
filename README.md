@@ -1,6 +1,8 @@
 # Data Mining
 
 [![version](https://badge.fury.io/js/mining-utils.svg)](https://badge.fury.io/js/mining-utils) [![NPM downloads](https://img.shields.io/npm/dw/mining-utils)](https://img.shields.io/npm/dw/mining-utils)  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/Oracy/mining-utils/blob/master/LICENSE) [![Build Status](https://travis-ci.org/Oracy/mining-utils.svg?branch=master)](https://travis-ci.org/Oracy/mining-utils)
+[![HitCount](http://hits.dwyl.io/oracy/mining-utils.svg)](http://hits.dwyl.io/oracy/mining-utils)
+---
 # mining-utils
 
 Functions to help in js data mining.
