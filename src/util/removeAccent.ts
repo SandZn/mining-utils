@@ -17,6 +17,7 @@ const removeAccentsArray = (textArray: string[]): string[] => {
   try {
     const map = {};
     const newArray: string[] = []
+
     accents.split('').forEach((el, idx) => map[el] = noAccents[idx])
 
     for (const key in textArray) {
