@@ -1,6 +1,6 @@
 {
   "name": "mining-utils",
-  "version": "0.3.0",
+  "version": "0.3.2",
   "description": "",
   "author": "Oracy Rezende Martos <oramartos_21@hotmail.com> (https://github.com/Oracy)",
   "main": "./mining-utils.ts",
@@ -31,9 +31,7 @@
     "chai": "^4.2.0",
     "mocha": "^6.2.2",
     "ts-node": "^8.4.1",
-    "typescript": "^3.6.4"
-  },
-  "dependencies": {
+    "typescript": "^3.6.4",
     "@types/chai": "^4.2.4",
     "@types/mocha": "^5.2.7",
     "gulp": "^4.0.2",
@@ -41,5 +39,7 @@
     "gulp-typescript": "^5.0.1",
     "gulp-uglify": "^3.0.2",
     "uglify-es": "^3.3.9"
+  },
+  "dependencies": {
   }
 }

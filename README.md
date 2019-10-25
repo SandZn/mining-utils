@@ -42,4 +42,4 @@ You can use as node or Typescript follow instructions belos:
 
 ## License
 
-Mining-utils is freely distributable under the terms of the [MIT license](https://github.com/moment/moment/blob/develop/LICENSE)
+Mining-utils is freely distributable under the terms of the [MIT license](https://github.com/Oracy/mining-utils/blob/master/LICENSE)
