@@ -12,7 +12,7 @@
     "build:transpile": "npx tsc",
     "build:clean": "mv dist/index.js ./ && mv dist/index.d.ts ./ && rm -rf dist/",
     "build:after": "ts-node src/util/changeDir.ts",
-    "start": "npm run build && node dist/index.js"
+    "start": "npm run build"
   },
   "keywords": [
     "data-mining",
