@@ -40,5 +40,3 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 </table>
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
-
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FOracy%2Fmining-utils.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FOracy%2Fmining-utils/refs/branch/master/f02a435a1d44db8fcac2b1d57a9b38d4766cdc91)
