@@ -18,28 +18,6 @@ You can use as node or Typescript follow instructions belos:
 - Typescript
 `import * as mining from mining-utils`
 ---
-- áÁàÀãÃâÂäÄ
-- éÉèÈẽẼêÊëË
-- íÍìÌĩĨîÎ
-- óÓòÒõÕÔ
-- úÚùÙũŨÛ
-- çÇĉĈ
-- ǵǴĝĜ
-- ĥĤḧḦ
-- ĵĴ
-- ḱḰ
-- ĺĹ
-- ḿḾ
-- ńŃǹǸñÑ
-- ṕṔ
-- ŕŔ
-- śŚŝŜ
-- ẗ
-- ǘǗǜǛṽṼ
-- ẃẂẁẀŵŴẅẄ
-- ẍẌ
-- ýÝỳỲŷŶỹỸ
-- źŹẑẐ
 
 ## License
 
