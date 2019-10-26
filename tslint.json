@@ -24,6 +24,8 @@
       true,
       "array"
     ],
-    "max-classes-per-file": false
+    "max-classes-per-file": false,
+    "indent": false,
+    "align": false
   }
 }

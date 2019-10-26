@@ -1,7 +1,8 @@
-import { assert, expect } from 'chai'
 import * as mining from '../index'
-import { removeAccents, removeAccentsArray } from '../src/util/removeAccent'
-import { removeBlankSpace, removeBlankSpaceArray, removePunctuation, removePunctuationArray } from '../src/util/removePunctuation'
+
+import { assert, expect } from 'chai'
+import { removeAccents, removeAccentsArray } from '../src/lib/removeAccent'
+import { removeBlankSpace, removeBlankSpaceArray, removePunctuation, removePunctuationArray } from '../src/lib/removePunctuation'
 
 describe('Tests to check remove accents functions', () => {
   it('Test if removeAccent is working to single string variable, with different sizes.', () => {
