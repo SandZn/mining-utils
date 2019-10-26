@@ -1,7 +1,7 @@
 # Data Mining
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 
-[![version](https://badge.fury.io/js/mining-utils.svg)](https://badge.fury.io/js/mining-utils) [![NPM downloads](https://img.shields.io/npm/dw/mining-utils)](https://img.shields.io/npm/dw/mining-utils)  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/Oracy/mining-utils/blob/master/LICENSE) [![Build Status](https://travis-ci.org/Oracy/mining-utils.svg?branch=master)](https://travis-ci.org/Oracy/mining-utils)
+[![version](https://badge.fury.io/js/mining-utils.svg)](https://badge.fury.io/js/mining-utils) [![NPM downloads](https://img.shields.io/npm/dw/mining-utils)](https://img.shields.io/npm/dw/mining-utils)  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/Oracy/mining-utils/blob/master/LICENSE) [![Build Status](https://travis-ci.org/Oracy/mining-utils.svg?branch=master)](https://travis-ci.org/Oracy/mining-utils) [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FOracy%2Fmining-utils.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FOracy%2Fmining-utils?ref=badge_shield)
 [![HitCount](http://hits.dwyl.io/oracy/mining-utils.svg)](http://hits.dwyl.io/oracy/mining-utils)
 ---
 # mining-utils
@@ -37,4 +37,4 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FOracy%2Fmining-utils.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FOracy%2Fmining-utils/refs/branch/master/f02a435a1d44db8fcac2b1d57a9b38d4766cdc91)
