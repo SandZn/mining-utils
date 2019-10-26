@@ -1,19 +1,19 @@
 {
   "name": "mining-utils",
-  "version": "0.4.3",
+  "version": "0.4.9",
   "description": "",
   "author": "Oracy Rezende Martos <oramartos_21@hotmail.com> (https://github.com/Oracy)",
   "contributors": [
     "Lucas Medeiros Cardoso <clucasmedeiros@gmail.com> (https://github.com/lu002047)"
   ],
-  "main": "./mining-utils.ts",
+  "main": "./index.js",
   "scripts": {
     "test": "mocha -r ts-node/register test/**/*.ts",
-    "build": "npm run build:remove-previous && npm run build:transpile && npm run build:minify && npm run build:clean && npm run build:after",
-    "build:remove-previous": "rm -rf dist && rm -f index.js",
+    "build": "npm run build:remove-previous && npm run build:transpile && npm run build:minify && npm run build:clean",
+    "build:remove-previous": "rm -f ./index.js ./index.d.ts",
     "build:minify": "gulp minify",
     "build:transpile": "npx tsc",
-    "build:clean": "mv dist/src/index.js ./ && mv dist/src/index.d.ts ./ && rm -rf dist/",
+    "build:clean": "rm -rf dist/",
     "build:after": "ts-node src/util/changeDir.ts",
     "start": "npm run build"
   },

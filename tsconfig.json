@@ -3,10 +3,10 @@
     "target": "es6",
     "module": "commonjs",
     "moduleResolution": "node",
-    "declaration": true,
+    "declaration": false,
     "outDir": "./dist"
   },
   "include": [
-    "src/", "test"
+    "src/"
   ]
 }
