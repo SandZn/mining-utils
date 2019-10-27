@@ -27,6 +27,7 @@ import { removeAccents } from mining-utils
 ```
 
 ## Implemented Functions
+
 ```javascript
 removeAccents('Em linguística, a noção de texto é ampla e ainda aberta a uma definição mais precisa. Grosso modo, pode ser entendido como manifestação linguística das ideias de um autor, que serão interpretadas pelo leitor de acordo com seus conhecimentos linguísticos e culturais. Seu tamanho é variável.')
 // output: 'Em linguistica, a nocao de texto e ampla e ainda aberta a uma definicao mais precisa. Grosso modo, pode ser entendido como manifestacao linguistica das ideias de um autor, que serao interpretadas pelo leitor de acordo com seus conhecimentos linguisticos e culturais. Seu tamanho e variavel.
@@ -40,13 +41,20 @@ removeBlankSpace('Hey        ,       how are              you           ?')
 // output: 'Hey , how are you ?'
 removeBlankSpaceArray(['Hey        ,       how are              you           ?', 'I            am      good!!'])
 // output: ['Hey , how are you ?', 'I am good!!']
+removeLinks('This is an example to remove links from a single phrase, https://web.whatsapp.com/ and text after the link.')
+// output: 'This is an example to remove links from a single phrase,  and text after the link.'
+removeLinks('This is an example to remove links from a single phrase, mms://link.com/ and text after the link.', 'mms')
+// you can pass on second parameter another links pattern for example: 'mms', 'm3u'
+// output: 'This is an example to remove links from a single phrase,  and text after the link.'
+removeLinksArray(['This is an example to remove links from a single phrase, https://web.whatsapp.com/ and text after the link.', 'This is an example to remove links from a single phrase, https://www.instagram.com/ and text after the link.', 'This is an example to remove links from a single phrase, https://www.google.com/ and text after the link.'])
+// output: ['This is an example to remove links from a single phrase,  and text after the link.', 'This is an example to remove links from a single phrase,  and text after the link.', 'This is an example to remove links from a single phrase,  and text after the link.']
 ```
+
 ---
 
 ## License
 
 Mining-utils is freely distributable under the terms of the [MIT license](https://github.com/Oracy/mining-utils/blob/master/LICENSE)
-
 
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FOracy%2Fmining-utils.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FOracy%2Fmining-utils?ref=badge_large)
 
@@ -58,7 +66,19 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- prettier-ignore -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/lu002047"><img src="https://avatars1.githubusercontent.com/u/12716914?v=4" width="100px;" alt="lu002047"/><br /><sub><b>lu002047</b></sub></a><br /><a href="#maintenance-lu002047" title="Maintenance">🚧</a> <a href="https://github.com/Oracy/mining-utils/commits?author=lu002047" title="Code">💻</a> <a href="#review-lu002047" title="Reviewed Pull Requests">👀</a></td>
+    <td align="center">
+      <a href="https://github.com/lu002047">
+        <img src="https://avatars1.githubusercontent.com/u/12716914?v=4" width="100px;" alt="lu002047"/>
+        <br />
+        <sub>
+          <b>lu002047</b>
+        </sub>
+      </a>
+      <br />
+      <a href="#maintenance-lu002047" title="Maintenance">🚧</a>
+      <a href="https://github.com/Oracy/mining-utils/commits?author=lu002047" title="Code">💻</a>
+      <a href="#review-lu002047" title="Reviewed Pull Requests">👀</a>
+    s</td>
   </tr>
 </table>
 

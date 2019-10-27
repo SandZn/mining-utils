@@ -2,6 +2,7 @@ import * as mining from '../index'
 
 import { assert, expect } from 'chai'
 import { removeAccents, removeAccentsArray } from '../src/lib/removeAccent'
+import { removeLinks, removeLinksArray } from '../src/lib/removeLinks'
 import { removeBlankSpace, removeBlankSpaceArray, removePunctuation, removePunctuationArray } from '../src/lib/removePunctuation'
 
 describe('Tests to check remove accents functions', () => {
@@ -30,6 +31,20 @@ describe('Test to check remove punctuation function', () => {
 
   it('Test if removeBlankSpaceArray is working as expected', () => {
     expect(removeBlankSpaceArray(['This    is    an         example            string with     a      lot     of    blank space', 'This    is    an         example            string with     a      lot     of    blank space', 'This    is    an         example            string with     a      lot     of    blank space', 'This    is    an         example            string with     a      lot     of    blank space'])).to.deep.equal(['This is an example string with a lot of blank space', 'This is an example string with a lot of blank space', 'This is an example string with a lot of blank space', 'This is an example string with a lot of blank space'])
+  })
+})
+
+describe('Test to check remove links function', () => {
+  it('Test if removeLinks is working as expected', () => {
+    assert.equal(removeLinks('This is an example to remove links from a single phrase, https://web.whatsapp.com/ and text after the link.'), 'This is an example to remove links from a single phrase,  and text after the link.')
+  })
+
+  it('Test if removeLinks is working as expected', () => {
+    assert.equal(removeLinks('This is an example to remove links from a single phrase, mms://web.whatsapp.com/ and text after the link.', 'mms'), 'This is an example to remove links from a single phrase,  and text after the link.')
+  })
+
+  it('Test if removeLinksArray is working as expected', () => {
+    expect(removeLinksArray(['This is an example to remove links from a single phrase, https://web.whatsapp.com/ and text after the link.', 'This is an example to remove links from a single phrase, https://www.instagram.com/ and text after the link.', 'This is an example to remove links from a single phrase, https://www.google.com/ and text after the link.'])).to.deep.equal(['This is an example to remove links from a single phrase,  and text after the link.', 'This is an example to remove links from a single phrase,  and text after the link.', 'This is an example to remove links from a single phrase,  and text after the link.'])
   })
 })
 
