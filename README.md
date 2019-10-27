@@ -12,11 +12,35 @@ Functions to help in js data mining.
 
 To install this module, just need to: `npm install mining-utils`
 
-You can use as node or Typescript follow instructions belos:
+You can use as node or Typescript follow instructions below:
 - Node Js
-`const mining = require('mining-utils')`
+```javascript
+const mining = require('mining-utils')
+
+mining.removeAccents('')
+```
 - Typescript
-`import * as mining from mining-utils`
+```javascript
+import * as mining from mining-utils
+// or
+import { removeAccents } from mining-utils
+```
+
+## Implemented Functions
+```javascript
+removeAccents('Em linguística, a noção de texto é ampla e ainda aberta a uma definição mais precisa. Grosso modo, pode ser entendido como manifestação linguística das ideias de um autor, que serão interpretadas pelo leitor de acordo com seus conhecimentos linguísticos e culturais. Seu tamanho é variável.')
+// output: 'Em linguistica, a nocao de texto e ampla e ainda aberta a uma definicao mais precisa. Grosso modo, pode ser entendido como manifestacao linguistica das ideias de um autor, que serao interpretadas pelo leitor de acordo com seus conhecimentos linguisticos e culturais. Seu tamanho e variavel.
+removeAccentsArray(['Em linguística, a noção de texto é ampla', 'definição mais precisa. Grosso modo, pode ser entendido como manifestação linguística'])
+// output: ['Em linguistica, a nocao de texto e ampla', 'definicao mais precisa. Grosso modo, pode ser entendido como manifestacao linguistica']
+removePunctuation('Hey there!!! How are you???')
+// output: Hey there Hou are you
+removePunctuationArray(['Hey there!!', 'How are you??', 'go, now'])
+// output: ['Hey there', 'How are you', 'go now']
+removeBlankSpace('Hey        ,       how are              you           ?')
+// output: 'Hey , how are you ?'
+removeBlankSpaceArray(['Hey        ,       how are              you           ?', 'I            am      good!!'])
+// output: ['Hey , how are you ?', 'I am good!!']
+```
 ---
 
 ## License
