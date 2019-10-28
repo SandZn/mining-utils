@@ -8,12 +8,6 @@ node_js:
 env:
   - workerCount=3 timeout=600000
 
-scripts:
-  - npm install codecov -g
-
-after_success:
-  - codecov
-
 matrix:
   fast_finish: true
 
@@ -24,7 +18,12 @@ branches:
 
 install:
   - npm uninstall typescript --no-save
+  - npm install codecov -g
   - npm install
+
+script:
+  - codecov
+  - nyc report --reporter=json > coverage/coverage.json
 
 cache:
   directories:
