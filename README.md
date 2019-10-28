@@ -78,7 +78,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <a href="#maintenance-lu002047" title="Maintenance">🚧</a>
       <a href="https://github.com/Oracy/mining-utils/commits?author=lu002047" title="Code">💻</a>
       <a href="#review-lu002047" title="Reviewed Pull Requests">👀</a>
-    s</td>
+    </td>
   </tr>
 </table>
 
