@@ -1,5 +1,5 @@
-import { removeLinks } from '../lib/removeLinks'
-import { removeBlankSpace, removePunctuation } from '../lib/removePunctuation'
+import { removeLinks } from './removeLinks'
+import { removeBlankSpace, removePunctuation } from './removePunctuation'
 
 const removeRT = (text: string): string => {
   const re = new RegExp(/(RT|via).*?:/, 'g')
@@ -40,5 +40,5 @@ export {
   removeHashtag,
   removeTag,
   removeNumber,
-  clearTweets
+  clearTweets,
 }

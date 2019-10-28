@@ -26,5 +26,5 @@ const removeLinksArray = (textArray: string[], pattern?: string): string[] => {
 
 export {
   removeLinks,
-  removeLinksArray
+  removeLinksArray,
 }
