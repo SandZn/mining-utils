@@ -21,12 +21,9 @@ install:
   - npm install codecov -g
   - npm install
 
-script:
-  - codecov
-
-cache:
-  directories:
-    - node_modules
+after_success:
+  - pip install --user codecov
+  - codecov --file coverage/lcov.info --disable search
 
 git:
   depth: 1
