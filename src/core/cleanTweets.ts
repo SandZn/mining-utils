@@ -7,7 +7,7 @@ const removeRT = (text: string): string => {
 }
 
 const removeHashtag = (text: string): string => {
-  const re = new RegExp(/(#\w*.[^\W])/, 'g')
+  const re = new RegExp(/(#\w*.(\s|^\W))/, 'g')
   return text.replace(re, '')
 }
 
