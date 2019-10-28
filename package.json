@@ -1,6 +1,6 @@
 {
   "name": "mining-utils",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "",
   "author": "Oracy Rezende Martos <oramartos_21@hotmail.com> (https://github.com/Oracy)",
   "contributors": [
@@ -14,7 +14,7 @@
     "build:minify": "gulp minify",
     "build:transpile": "npx tsc",
     "start": "npm run build",
-    "test": "mocha -r ts-node/register test/**/*.ts"
+    "test": "npm start && mocha -r ts-node/register test/**/*.ts"
   },
   "keywords": [
     "data-mining",
