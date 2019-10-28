@@ -26,7 +26,7 @@ import * as mining from mining-utils
 import { removeAccents } from mining-utils
 ```
 
-## Implemented Functions
+### String Manipulation
 
 ```javascript
 removeAccents('Em linguística, a noção de texto é ampla e ainda aberta a uma definição mais precisa. Grosso modo, pode ser entendido como manifestação linguística das ideias de um autor, que serão interpretadas pelo leitor de acordo com seus conhecimentos linguísticos e culturais. Seu tamanho é variável.')
@@ -48,6 +48,21 @@ removeLinks('This is an example to remove links from a single phrase, mms://link
 // output: 'This is an example to remove links from a single phrase,  and text after the link.'
 removeLinksArray(['This is an example to remove links from a single phrase, https://web.whatsapp.com/ and text after the link.', 'This is an example to remove links from a single phrase, https://www.instagram.com/ and text after the link.', 'This is an example to remove links from a single phrase, https://www.google.com/ and text after the link.'])
 // output: ['This is an example to remove links from a single phrase,  and text after the link.', 'This is an example to remove links from a single phrase,  and text after the link.', 'This is an example to remove links from a single phrase,  and text after the link.']
+```
+
+### Twitter
+
+```javascript
+removeRT('RT @sports: ¿ #QuestionOfTheDay ? @footbal 4-4-2 Shout ‘Em out #Footbal Fans!  Who’s Your #Tram?  I’m ALL #Saints!!! #W124ãHODAT #WHODATNATION ⚜️… https://t.co/ITy7ESKfuB')
+// output: ¿ #QuestionOfTheDay ? @footbal 4-4-2 Shout ‘Em out #Footbal Fans!  Who’s Your #Tram?  I’m ALL #Saints!!! #W124ãHODAT #WHODATNATION ⚜️… https://t.co/ITy7ESKfuB'
+removeHashtag('RT @sports: ¿ #QuestionOfTheDay ? @footbal 4-4-2 Shout ‘Em out #Footbal Fans!  Who’s Your #Tram?  I’m ALL #Saints!!! #W124ãHODAT #WHODATNATION ⚜️… https://t.co/ITy7ESKfuB')
+// output: RT @sports: ¿  ? @footbal 4-4-2 Shout ‘Em out  Fans!  Who’s Your   I’m ALL    ⚜️… https://t.co/ITy7ESKfuB'
+removeTag('RT @sports: ¿ #QuestionOfTheDay ? @footbal 4-4-2 Shout ‘Em out #Footbal Fans!  Who’s Your #Tram?  I’m ALL #Saints!!! #W124ãHODAT #WHODATNATION ⚜️… https://t.co/ITy7ESKfuB')
+// output: RT ¿ #QuestionOfTheDay ? 4-4-2 Shout ‘Em out #Footbal Fans!  Who’s Your #Tram?  I’m ALL #Saints!!! #W124ãHODAT #WHODATNATION ⚜️… https://t.co/ITy7ESKfuB'
+removeNumber('RT @sports: ¿ #QuestionOfTheDay ? @footbal 4-4-2 Shout ‘Em out #Footbal Fans!  Who’s Your #Tram?  I’m ALL #Saints!!! #W124ãHODAT #WHODATNATION ⚜️… https://t.co/ITy7ESKfuB')
+// output: RT @sports: ¿ #QuestionOfTheDay ? @footbal -- Shout ‘Em out #Footbal Fans!  Who’s Your #Tram?  I’m ALL #Saints!!! #WãHODAT #WHODATNATION ⚜️… https://t.co/ITyESKfuB'
+clearTweets('RT @sports: ¿ #QuestionOfTheDay ? @footbal 4-4-2 Shout ‘Em out #Footbal Fans!  Who’s Your #Tram?  I’m ALL #Saints!!! #W124ãHODAT #WHODATNATION ⚜️… https://t.co/ITy7ESKfuB')
+// output: Shout Em out Fans Whos Your Im ALL'
 ```
 
 ---
