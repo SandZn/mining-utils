@@ -1,6 +1,6 @@
 {
   "name": "mining-utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "author": "Oracy Rezende Martos <oramartos_21@hotmail.com> (https://github.com/Oracy)",
   "contributors": [
@@ -16,11 +16,10 @@
   },
   "keywords": [
     "string",
-    "manipulation",
     "string-manipulation",
-    "data-clean",
     "twitter",
-    "twitter-clean-data"
+    "text-mining",
+    "data-mining"
   ],
   "engines": {
     "node": "*"
