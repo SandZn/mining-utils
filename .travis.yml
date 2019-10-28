@@ -23,7 +23,6 @@ install:
 
 script:
   - codecov
-  - nyc report --reporter=json > coverage/coverage.json
 
 cache:
   directories:
