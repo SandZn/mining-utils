@@ -35,5 +35,5 @@ export {
   removePunctuation,
   removeBlankSpace,
   removePunctuationArray,
-  removeBlankSpaceArray
+  removeBlankSpaceArray,
 }

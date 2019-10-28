@@ -1,10 +1,10 @@
 import * as mining from '../index'
 
 import { assert, expect } from 'chai'
-import { clearTweets, removeHashtag, removeNumber, removeRT, removeTag } from '../src/lib/cleanTweets'
-import { removeAccents, removeAccentsArray } from '../src/lib/removeAccent'
-import { removeLinks, removeLinksArray } from '../src/lib/removeLinks'
-import { removeBlankSpace, removeBlankSpaceArray, removePunctuation, removePunctuationArray } from '../src/lib/removePunctuation'
+import { clearTweets, removeHashtag, removeNumber, removeRT, removeTag } from '../src/core/cleanTweets'
+import { removeAccents, removeAccentsArray } from '../src/core/removeAccent'
+import { removeLinks, removeLinksArray } from '../src/core/removeLinks'
+import { removeBlankSpace, removeBlankSpaceArray, removePunctuation, removePunctuationArray } from '../src/core/removePunctuation'
 
 describe('Tests to check clear Tweets function ', () => {
   it('Test if removeHashtag is working as expected.', () => {
