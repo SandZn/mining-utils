@@ -80,11 +80,11 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center">
-      <a href="https://github.com/lu002047">
-        <img src="https://avatars1.githubusercontent.com/u/12716914?v=4" width="100px;" alt="lu002047"/>
+      <a href="https://github.com/mlucascardoso">
+        <img src="https://avatars1.githubusercontent.com/u/12716914?v=4" width="100px;" alt="mlucascardoso"/>
         <br />
         <sub>
-          <b>lu002047</b>
+          <b>mlucascardoso</b>
         </sub>
       </a>
       <br />
