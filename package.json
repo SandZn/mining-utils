@@ -12,7 +12,8 @@
     "build:minify": "gulp minify",
     "build:transpile": "npx tsc",
     "start": "npm run build",
-    "test": "npm start && mocha -r ts-node/register test/**/*.ts"
+    "test": "npm start && mocha -r ts-node/register test/**/*.ts",
+    "coverage": "npm start && istanbul cover _mocha ./dist/index.js -x test/**/*.ts"
   },
   "keywords": [
     "string",
