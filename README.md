@@ -1,6 +1,6 @@
 # Data Mining
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FOracy%2Fmining-utils.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FOracy%2Fmining-utils?ref=badge_shield) [![codecov](https://codecov.io/gh/Oracy/mining-utils/branch/master/graph/badge.svg)](https://codecov.io/gh/Oracy/mining-utils)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FOracy%2Fmining-utils.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FOracy%2Fmining-utils?ref=badge_shield) [![Coverage Status](https://coveralls.io/repos/github/Oracy/mining-utils/badge.svg?branch=master)](https://coveralls.io/github/Oracy/mining-utils?branch=master)
 
 [![version](https://badge.fury.io/js/mining-utils.svg)](https://badge.fury.io/js/mining-utils) [![NPM downloads](https://img.shields.io/npm/dw/mining-utils)](https://img.shields.io/npm/dw/mining-utils)  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/Oracy/mining-utils/blob/master/LICENSE) [![Build Status](https://travis-ci.org/Oracy/mining-utils.svg?branch=master)](https://travis-ci.org/Oracy/mining-utils) [![HitCount](http://hits.dwyl.io/oracy/mining-utils.svg)](http://hits.dwyl.io/oracy/mining-utils)
 ---
