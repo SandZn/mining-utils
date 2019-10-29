@@ -18,12 +18,9 @@ branches:
 
 install:
   - npm uninstall typescript --no-save
-  - npm install istanbul
   - npm install
 
-after_success:
-  - npm run coverage
-  - bash <(curl -s https://codecov.io/bash)
+after_success: npm run coverage
 
 git:
   depth: 1
